@@ -19,4 +19,9 @@ cookie.get(name);
 
 Test Parameter
 cookie.check("test");
+
+cookie.remove(name);
+
+Test Parameter
+cookie.remove("test");
 ```
