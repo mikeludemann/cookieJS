@@ -30,6 +30,11 @@ var cookie = {
         } else {
         	console.log("Cookie is not available");
         }
+    },
+
+    remove: function(cname){
+        this.set(cname,"",-1);
+        console.log("Cookie has been removed");
     }
     
 };

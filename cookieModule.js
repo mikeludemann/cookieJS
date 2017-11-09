@@ -32,10 +32,16 @@ var cookie = (function(){
         }
     }
     
+    function remove(cname){
+    	set(cname,"",-1);
+        console.log("Cookie has been removed");
+    }
+    
     return {
     	set: set,
         get: get,
-        check: check
+        check: check,
+        remove: remove
     }
     
 })();
