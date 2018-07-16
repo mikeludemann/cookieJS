@@ -24,4 +24,7 @@ cookie.remove(name);
 
 Test Parameter
 cookie.remove("test");
+
+cookie.getAll();
+
 ```

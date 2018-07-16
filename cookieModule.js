@@ -36,12 +36,22 @@ var cookie = (function(){
     	set(cname,"",-1);
         console.log("Cookie has been removed");
     }
+
+    function getAll() {
+        var cookies = document.cookie(";");
+        var text = "";
+        for(var i = 1; i <= cookies.length; i++){
+            text += i + ": " + cookies[i-1] + "\n";
+        }
+        return console.log(text);
+    }
     
     return {
     	set: set,
         get: get,
         check: check,
-        remove: remove
+        remove: remove,
+        getAll: getAll
     }
     
 })();
